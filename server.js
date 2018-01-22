@@ -57,7 +57,7 @@ app.get('/bad', (req, res) => {
 
 app.get('/projects', (req, res) => {
 	res.render('projects.hbs', {
-		projectLink: 'https://github.com/Fabs2308/node-course-2-webserver.git'
+		projectLink: 'https://github.com/Fabs2308/node-course-2-webserver.git',
 		infoMessage: 'Here you can find the link to my github project'
 		});
 });
