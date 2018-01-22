@@ -55,6 +55,13 @@ app.get('/bad', (req, res) => {
 		"name":"ErrorMessage", "text":"Error. Page not found."});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		projectLink: 'https://github.com/Fabs2308/node-course-2-webserver.git'
+		infoMessage: 'Here you can find the link to my github project'
+		});
+});
+
 app.listen(port, () => {
 	console.log(`Server is up on port ${port}.`);
 });
